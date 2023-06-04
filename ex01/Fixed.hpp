@@ -11,6 +11,7 @@ class Fixed
 		Fixed();
 		Fixed(int const raw);
 		Fixed(float const floaty);
+		Fixed(const Fixed &loco);
 		Fixed& operator=(const Fixed& other);
 		~Fixed();
 
@@ -22,9 +23,8 @@ class Fixed
 
 	private:
 
-		int					fixedPoint;
-		float				floatFixedPoint;
-		static const int	numFractionalBits = 8;
+		int					_fixedPoint;
+		static const int	_numFractionalBits;
 };
 
 std::ostream& operator<<(std::ostream& os, const Fixed& f);

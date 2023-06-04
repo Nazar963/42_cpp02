@@ -17,8 +17,8 @@ class Fixed
 
 	private:
 
-		int					fixedPoint;
-		static const int	numFractionalBits = 8;
+		int					_fixedPoint;
+		static const int	_numFractionalBits;
 };
 
 #endif
