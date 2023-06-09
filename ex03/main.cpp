@@ -8,7 +8,7 @@ int	main(void)
 	Point	c;
 	Point	point;
 
-	int		var;
+	float	var;
 
 	std::cout << "Enter a.x: " << std::endl;
 	std::cin >> var;

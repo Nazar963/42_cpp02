@@ -8,8 +8,8 @@ const int Fixed::_numFractionalBits = 8;
 
 Fixed::Fixed()
 {
-	this->_fixedPoint = 0;
 	// std::cout << "Default constructor called" << std::endl;
+	this->_fixedPoint = 0;
 }
 
 Fixed::Fixed(int const raw)

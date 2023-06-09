@@ -56,7 +56,6 @@ float	Fixed::toFloat(void) const
 	return ((float)_fixedPoint / (1 << _numFractionalBits));
 }
 
-
 int	Fixed::toInt(void) const
 {
 	return (this->_fixedPoint >> _numFractionalBits);

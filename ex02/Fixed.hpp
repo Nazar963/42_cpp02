@@ -6,8 +6,10 @@
 
 class Fixed
 {
+	private:
+		int					_fixedPoint;
+		static const int	_numFractionalBits;
 	public:
-
 		Fixed();
 		Fixed(int const raw);
 		Fixed(float const floaty);
@@ -42,11 +44,6 @@ class Fixed
 		void				setRawBits(int const raw);
 
 		~Fixed();
-
-	private:
-
-		int					_fixedPoint;
-		static const int	_numFractionalBits;
 };
 
 std::ostream& operator<<(std::ostream& os, const Fixed& f);
